@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom interactive word styles */
+.word-interactive {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.word-highlighted {
+  border-bottom: 1.5px dotted #d97706;
+}
+
+.word-highlighted:hover {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-bottom-style: solid;
+}
+
+.dark .word-highlighted {
+  border-bottom-color: #f59e0b;
+}
+
+.dark .word-highlighted:hover {
+  background-color: #78350f33;
+  color: #fbbf24;
+}

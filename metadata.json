@@ -1,0 +1,6 @@
+{
+  "name": "Family of God - Honor-Shame Gospel Reader",
+  "description": "An interactive Easy English Bible reader for 'What Do Christians Believe About Family of God?' by Lewis Ikeda, featuring instant word-tap dictionary definitions, audio pronunciation, and vocabulary tools for English learners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
